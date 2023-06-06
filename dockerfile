@@ -1,5 +1,5 @@
 FROM openjdk:8-jre
 RUN mkdir app
-ADD /target/demo1-1.0-SNAPSHOT.war /app/demo1-1.0-SNAPSHOT.war
+ADD /target /app
 WORKDIR /app
 ENTRYPOINT java -jar demo1-1.0-SNAPSHOT.war
